@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Meditation Application</string>
+    <string name="Main_Text">Фон</string>
+    <string name="title_activity_sound">SoundActivity</string>
+</resources>

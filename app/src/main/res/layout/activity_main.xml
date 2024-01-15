@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="75dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="116dp"
+            android:text="@string/Main_Text"
+            android:textColor="@color/TextOpacity50"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="77dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/view_pager_2"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="116dp"
+            android:ems="10"
+            android:hint="5"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints=""
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="31dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="256dp"
+            android:layout_marginTop="124dp"
+            android:alpha="0.5"
+            android:src="@drawable/timesand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager_2"
+            android:layout_width="416dp"
+            android:layout_height="330dp"
+            android:layout_marginTop="176dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="364dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="516dp"
+            android:layout_marginEnd="20dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="241dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/button_main"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="НАЧАТЬ"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
